@@ -26,5 +26,19 @@
         ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <head>
+        <title>Event Handler Example</title>
+        <script type="text/javascript">
+          function myAlert() {
+            alert("I am an event handler....");
+              return;
+          }
+        </script>
+      </head>
+      <body>
+        <span onmouseover="myAlert();">
+        Bring your mouse here to see an alert
+        </span>
+      </body>
 </body>
 </html>
